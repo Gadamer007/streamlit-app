@@ -19,9 +19,8 @@ data['Country'] = data['Country'].str.strip()  # Remove leading/trailing spaces
 data['Country'] = data['Country'].str.title()  # Title case for uniformity
 
 # Add title and instructions
-st.write("### Instructions for Using the Tool")
-
-instructions = """
+with st.expander("📖  Instructions (Click to Expand/Collapse)"):
+    st.write("""
 - This tool aims to help users find the most suitable countries for pursuing FI during the accumulation phase.
 - Select your **current country** from the dropdown menu above the graph.
 - The graph maps **percentage differences** in salaries and cost of living (COL) relative to your selected country.
@@ -33,8 +32,8 @@ instructions = """
 - Click on the legend's continents to remove groups of countries.
 - Example: With Italy as the reference (appearing at the intersection of the x and y axes in dashed white), Spain has an 11% higher average salary and a 7.4% lower cost of living. Pursuing FI in Spain is likely to be easier, on average, than in Italy. There are about 30 countries where achieving FI would likely be easier compared to Italy.
 - Data on salaries and cost of living is from Numbeo (2025).
-"""
-st.write(instructions)  # Add instructions above the dropdown menu
+""")
+
 
 # Dropdown menu for selecting the reference country
 # Dropdown menu for selecting the reference country
