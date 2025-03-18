@@ -188,5 +188,5 @@ def create_scatter_plot(data, reference_country):
 # Display the plot
 scatter_plot = create_scatter_plot(data, reference_country)
 st.plotly_chart(scatter_plot, use_container_width=True)
-st.empty() 
+#st.empty() 
 
