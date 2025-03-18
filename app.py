@@ -179,7 +179,7 @@ def create_scatter_plot(data, reference_country):
             text=f"Cost of Living vs Salary Comparison (Reference: {reference_country})",
             font=dict(size=20, color="white"),  # Fully visible title
         ),
-        margin=dict(l=40, r=40, t=50, b=20),
+        margin=dict(l=40, r=40, t=50, b=5),
         paper_bgcolor='black',
         plot_bgcolor='black',
     )
