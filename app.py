@@ -177,7 +177,7 @@ def create_scatter_plot(data, reference_country):
             text=f"Cost of Living vs Salary Comparison (Reference: {reference_country})",
             font=dict(size=20, color="white"),  # Fully visible title
         ),
-        margin=dict(l=40, r=40, t=50, b=5),
+        margin=dict(l=40, r=40, t=50, b=0),
         paper_bgcolor='black',
         plot_bgcolor='black',
     )
@@ -187,6 +187,6 @@ def create_scatter_plot(data, reference_country):
 
 # Display the plot
 scatter_plot = create_scatter_plot(data, reference_country)
-st.plotly_chart(scatter_plot, use_container_width=False)
+st.plotly_chart(scatter_plot, use_container_width=True)
 st.empty() 
 
