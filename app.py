@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.set_page_config(layout="long")
 
 # Title for your Streamlit app
 st.title("Top Countries for Financial Independence")
