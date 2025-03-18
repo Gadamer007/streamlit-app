@@ -168,7 +168,7 @@ def create_scatter_plot(data, reference_country):
     )
     fig.update_layout(
     height=500,  # Reduce height slightly
-    width=1200,  # Increase width for a more horizontal shape
+    width=900,  # Increase width for a more horizontal shape
 
         legend=dict(
             title=dict(font=dict(color="white")),
