@@ -5,7 +5,7 @@ import plotly.express as px
 
 
 # Title for your Streamlit app
-st.title("Topp Countries for Financial Independence")
+#st.title("Top Countries for Financial Independence")
 
 # Load the embedded Excel file automatically
 @st.cache_data
@@ -21,20 +21,20 @@ data['Country'] = data['Country'].str.strip()  # Remove leading/trailing spaces
 data['Country'] = data['Country'].str.title()  # Title case for uniformity
 
 # Add title and instructions
-with st.expander("📖  Instructions (Click to Expand/Collapse)"):
-    st.write("""
-- This tool aims to help users find the most suitable countries for pursuing FI during the accumulation phase.
-- Select your **current country** from the dropdown menu above the graph.
-- The graph maps **percentage differences** in salaries and cost of living (COL) relative to your selected country.
-- The **red dashed line** serves as a benchmark:
-   - Countries **above the red line** may provide better opportunities for pursuing financial independence during the accumulation phase (on average).
-   - Countries **on the red line** have equivalent percentage differences in both salaries and COL (e.g., perhaps a 10% higher salary, but also a 10% higher COL).
-   - Countries **below the red line** may provide worse opportunities for pursuing financial independence during the accumulation phase (on average).
-- Hover over the top right of the figure and use the zoom tool (draw a square on the figure), zoom in/out, pan, and other functions to better visualize your countries of interest.
-- Click on the legend's continents to remove groups of countries.
-- Example: With Italy as the reference (appearing at the intersection of the x and y axes in dashed white), Spain has an 11% higher average salary and a 7.4% lower cost of living. Pursuing FI in Spain is likely to be easier, on average, than in Italy. There are about 30 countries where achieving FI would likely be easier compared to Italy.
-- Data on salaries and cost of living is from Numbeo (2025).
-""")
+#with st.expander("📖  Instructions (Click to Expand/Collapse)"):
+ #   st.write("""
+#- This tool aims to help users find the most suitable countries for pursuing FI during the accumulation phase.
+#- Select your **current country** from the dropdown menu above the graph.
+#- The graph maps **percentage differences** in salaries and cost of living (COL) relative to your selected country.
+#- The **red dashed line** serves as a benchmark:
+#   - Countries **above the red line** may provide better opportunities for pursuing financial independence during the accumulation phase (on average).
+#   - Countries **on the red line** have equivalent percentage differences in both salaries and COL (e.g., perhaps a 10% higher salary, but also a 10% higher COL).
+#   - Countries **below the red line** may provide worse opportunities for pursuing financial independence during the accumulation phase (on average).
+#- Hover over the top right of the figure and use the zoom tool (draw a square on the figure), zoom in/out, pan, and other functions to better visualize your countries of interest.
+#- Click on the legend's continents to remove groups of countries.
+#- Example: With Italy as the reference (appearing at the intersection of the x and y axes in dashed white), Spain has an 11% higher average salary and a 7.4% lower cost of living. Pursuing FI in Spain is likely to be easier, on average, than in Italy. There are about 30 countries where achieving FI would likely be easier compared to Italy.
+#- Data on salaries and cost of living is from Numbeo (2025).
+#""")
 
 
 # Dropdown menu for selecting the reference country
