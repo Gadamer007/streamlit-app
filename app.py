@@ -5,7 +5,7 @@ import plotly.express as px
 
 
 # Title for your Streamlit app
-st.title("Top Countries for Financial Independence")
+st.title("Topp Countries for Financial Independence")
 
 # Load the embedded Excel file automatically
 @st.cache_data
